@@ -9,9 +9,10 @@ class Attribute extends Model
 {
     use HasFactory;
 
-    protected $fillable=["name"];
+    protected $fillable = ["name"];
 
-    public function values(){
+    public function values()
+    {
 
         return $this->hasMany(Value::class);
     }

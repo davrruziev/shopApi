@@ -8,25 +8,22 @@ use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
         Category::create([
-          'name'=>'stul',
+            'name' => 'stul',
         ]);
 
         Category::create([
-            'name'=>'stol',
-          ]);
+            'name' => 'stol',
+        ]);
 
-          Category::create([
-            'name'=>'kreslo',
-          ]);
-          Category::create([
-            'name'=>'divan',
-          ]);
-
+        Category::create([
+            'name' => 'kreslo',
+        ]);
+        Category::create([
+            'name' => 'divan',
+        ]);
     }
 }

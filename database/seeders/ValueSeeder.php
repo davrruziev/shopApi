@@ -8,31 +8,28 @@ use Illuminate\Database\Seeder;
 
 class ValueSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         Value::create([
-            "attribute_id"=>1,
-            "name"=>"Qizil",
+            "attribute_id" => 1,
+            "name" => "Qizil",
         ]);
         Value::create([
-            "attribute_id"=>1,
-            "name"=>"Qora",
+            "attribute_id" => 1,
+            "name" => "Qora",
         ]);
         Value::create([
-            "attribute_id"=>1,
-            "name"=>"Jigarrang",
+            "attribute_id" => 1,
+            "name" => "Jigarrang",
         ]);
 
         Value::create([
-            "attribute_id"=>2,
-            "name"=>"MDF",
+            "attribute_id" => 2,
+            "name" => "MDF",
         ]);
         Value::create([
-            "attribute_id"=>2,
-            "name"=>"LDSP",
+            "attribute_id" => 2,
+            "name" => "LDSP",
         ]);
     }
 }

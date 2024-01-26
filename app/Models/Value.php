@@ -9,10 +9,11 @@ class Value extends Model
 {
     use HasFactory;
 
-    protected $fillable=["name"];
+    protected $fillable = ["name"];
 
-    public function attribute(){
-        
+    public function attribute()
+    {
+
         return $this->belongsTo(Attribute::class);
     }
 }
