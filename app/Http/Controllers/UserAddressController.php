@@ -8,7 +8,6 @@ use App\Http\Requests\UpdateUserAddressRequest;
 
 class UserAddressController extends Controller
 {
-
     public function __construct()
     {
         $this->middleware('auth:sanctum');
@@ -19,13 +18,11 @@ class UserAddressController extends Controller
         return auth()->user()->addresses;
     }
 
-
     public function store(StoreUserAddressRequest $request)
     {
         auth()->user()->addresses()->create($request->toArray());
         return true;
     }
-
 
     public function show(UserAddress $userAddress)
     {

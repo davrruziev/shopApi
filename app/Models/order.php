@@ -12,6 +12,7 @@ class order extends Model
     protected $fillable =
         [
             "user_id",
+            "status_id",
             "comment",
             "delivery_method_id",
             "payment_type_id",
@@ -39,5 +40,10 @@ class order extends Model
     public function deliveryMethod()
     {
         return $this->belongsTo(DeliveryMethod::class);
+    }
+
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
     }
 }
